@@ -6,8 +6,10 @@ import { toggleNavigation } from "../../store/slice/navigationSlice";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { BurgerBox } from "../icons/Icons";
-const pages = ["About", "Portfolio", "Contacts"];
 
+
+
+const pages = ["About", "Portfolio", "Contacts"];
 
 const Navigation = () => {
   const dispatch = useDispatch();

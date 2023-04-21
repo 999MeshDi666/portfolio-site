@@ -1,12 +1,42 @@
-import { Typography, Box, Button, Grid, Stack } from "@mui/material";
+import { Typography, Box, Button, Stack } from "@mui/material";
 import madi from "../../assets/images/madi.png";
-import { GitHub } from "../icons/Icons";
-import { LinkedIn } from "../icons/Icons";
-import { Telegram } from "../icons/Icons";
+import {
+  GitHub,
+  LinkedIn,
+  Telegram,
+  JavaScript,
+  CSharp,
+  Python,
+  Firebase,
+  MySql,
+  Postgres,
+  Html,
+  CSS,
+  Figma,
+  Photoshop,
+} from "../icons/Icons";
 
+const general = {
+  borderRadius: "50px",
+  border: "0.5px solid #000",
+  boxShadow: "none",
+};
+
+const skillList = [
+  <JavaScript />,
+  <CSharp />,
+  <Python />,
+  <Firebase />,
+  <MySql />,
+  <Postgres />,
+  <Html />,
+  <CSS />,
+  <Figma />,
+  <Photoshop />,
+];
 const Contacts = () => {
   return (
-    <Box sx={{ textAlign: "center", paddingTop: "86px" }}>
+    <Box sx={{ textAlign: "center", paddingTop: "86px", paddingBottom: "100px" }}>
       <Box
         component="img"
         alt="Image"
@@ -42,17 +72,17 @@ const Contacts = () => {
           Hi👋 , my name is Madi and I want to <br /> be a frontend developer✌.
         </Typography>
       </Box>
-      <Box sx={{ marginTop: {xs: "16px", sm: "36px" }}}>
+      <Box sx={{ marginTop: { xs: "16px", sm: "36px" } }}>
         <Button
           href="https://github.com/999MeshDi666"
-          variant="contained"
+          style={general}
           sx={{
             backgroundColor: "#fff",
             width: { xs: "180px", sm: "368px" },
-            height: {xs: "30px", sm: "60px"},
-            borderRadius: "50px",
-            border: "0.5px solid #000",
-            boxShadow: "none", 
+            height: { xs: "30px", sm: "60px" },
+            "&:hover": {
+              backgroundColor: "#fff",
+            },
           }}
         >
           <GitHub />
@@ -60,40 +90,58 @@ const Contacts = () => {
         <Stack
           direction="row"
           justifyContent="center"
-       
           mt={{ xs: "8px", sm: "16px" }}
           spacing={{ xs: 1, sm: 3 }}
         >
           <Button
             href="https://www.linkedin.com/in/madi-yegeubekov-060479248/"
-            variant="contained"
+            style={general}
             sx={{
               backgroundColor: "#497EBC",
-              width: {xs: "85px", sm: "170px"},
-              height: {xs: "26px", sm: "52px"},
-              borderRadius: "50px",
-              border: "0.5px solid #000",
-              boxShadow: "none", 
+              width: { xs: "85px", sm: "170px" },
+              height: { xs: "26px", sm: "52px" },
+              "&:hover": {
+                backgroundColor: "#497EBC",
+              },
             }}
           >
             <LinkedIn />
           </Button>
           <Button
             href="https://t.me/Madi0404"
-            variant="contained"
+            style={general}
             sx={{
               backgroundColor: "#4199FF",
-              width: {xs: "85px", sm: "170px"},
-              height: {xs: "26px", sm: "52px"},
-              borderRadius: "50px",
-              border: "0.5px solid #000",
-              boxShadow: "none", 
+              width: { xs: "85px", sm: "170px" },
+              height: { xs: "26px", sm: "52px" },
+              "&:hover": {
+                backgroundColor: "#4199FF",
+              },
             }}
           >
             <Telegram />
           </Button>
         </Stack>
       </Box>
+      <Stack 
+        direction="row"
+        justifyContent="center"
+        flexWrap="wrap"
+        sx={{
+          marginTop: {xs: "50px", sm: "100px"},
+          mx: "auto",
+          textAlign: "center",
+          width: {xs: "180px", sm: "300px"},
+        }}>
+        {skillList.map((skill, index)=>(
+          <Box 
+            component="span"
+            sx={{mx: {xs: "6px", sm: "10px"}, marginBottom: {xs: "6px", sm: "10px" }}} 
+            key={index}>
+              {skill}
+          </Box>
+        ))}
+      </Stack>
     </Box>
   );
 };
