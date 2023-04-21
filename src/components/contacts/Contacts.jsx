@@ -36,7 +36,7 @@ const skillList = [
 ];
 const Contacts = () => {
   return (
-    <Box sx={{ textAlign: "center", paddingTop: "86px", paddingBottom: "100px" }}>
+    <Box sx={{ textAlign: "center", paddingTop: "86px", paddingBottom: "50px" }}>
       <Box
         component="img"
         alt="Image"

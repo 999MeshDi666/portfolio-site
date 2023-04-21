@@ -9,6 +9,7 @@ import Navbar from "./components/navbar/Navbar";
 import { useSelector } from "react-redux";
 import Contacts from "./components/contacts/Contacts";
 import NavigationModal from "./components/navbar/NavigationModal";
+import About from "./components/about/About";
 const getDesignTokens = (mode) => ({
   palette: {
     mode,
@@ -81,6 +82,7 @@ function App() {
         <NavigationModal/>
         <Container>
           <Contacts/>
+          <About/>
         </Container>
       </ThemeProvider>
     </div>
