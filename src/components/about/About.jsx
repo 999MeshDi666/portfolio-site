@@ -2,13 +2,14 @@ import { Typography, Box } from "@mui/material";
 
 const About = () =>{
  return(
-    <Box sx={{ textAlign: "center", paddingTop: "50px", paddingBottom: "50px"  }}>
+    <Box sx={{py: "50px"}}>
         <Typography 
-            variant="h2"
+            variant="h1"
             sx={{ 
                 fontSize: { xs: "20px", sm: "40px", md: "60px" }, 
                 fontWeight: 800, 
-                marginBottom: {xs: "24px", sm: "44px" } 
+                marginBottom: {xs: "24px", sm: "44px" },
+                textAlign: "center",
             }}>
             About me
         </Typography>

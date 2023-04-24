@@ -24,7 +24,7 @@ const Navigation = () => {
           onClick={() => dispatch(asyncToggleTheme())}
           color="inherit"
           sx={{
-            backgroundColor: "secondary.main",
+            backgroundColor: "secondary.dark",
             border: "1px solid #606060",
             borderRadius: "5px",
             minWidth: { xs: "30px", sm: "40px" },
@@ -64,7 +64,7 @@ const Navigation = () => {
           color="inherit"
           onClick={()=> dispatch(toggleNavigation())}
           sx={{
-            backgroundColor: "secondary.main",
+            backgroundColor: "secondary.dark",
             border: "1px solid #606060",
             borderRadius: "5px",
             minWidth: { xs: "30px", sm: "40px" },

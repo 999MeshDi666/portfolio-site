@@ -10,6 +10,8 @@ import { useSelector } from "react-redux";
 import Contacts from "./components/contacts/Contacts";
 import NavigationModal from "./components/navbar/NavigationModal";
 import About from "./components/about/About";
+import Portfolio from "./components/portfolio/Portfolio";
+
 const getDesignTokens = (mode) => ({
   palette: {
     mode,
@@ -20,7 +22,8 @@ const getDesignTokens = (mode) => ({
             contrastText: "#fff",
           },
           secondary: {
-            main: "#343434",
+            main: "#fff",
+            dark: "#343434",
             contrastText: "#fff",
           },
           divider: "#f9f4dc",
@@ -38,7 +41,8 @@ const getDesignTokens = (mode) => ({
             contrastText: "#3a3a3a",
           },
           secondary: {
-            main: "#E7DFBD",
+            main: "#343434",
+            dark: "#E7DFBD",
             contrastText: "#3a3a3a",
           },
           divider: "#3a3a3a",
@@ -58,6 +62,8 @@ const getDesignTokens = (mode) => ({
     fontWeightMedium: 500,
     fontWeightBold: 700,
   },
+  
+  
 });
 function App() {
   const [mode, setMode] = useState("dark");
@@ -83,6 +89,7 @@ function App() {
         <Container>
           <Contacts/>
           <About/>
+          <Portfolio/>
         </Container>
       </ThemeProvider>
     </div>
