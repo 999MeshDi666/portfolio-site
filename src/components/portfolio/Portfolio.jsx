@@ -2,7 +2,6 @@ import {Typography,Box} from "@mui/material";
 import PortfolioTabs from "./PortfolioTabs";
 
 
-
 const Portfolio = () => {
   
   return (
@@ -10,7 +9,7 @@ const Portfolio = () => {
       <Typography
         variant="h1"
         sx={{
-          fontSize: { xs: "20px", sm: "40px", md: "60px" },
+          fontSize: { xs: "20px", sm: "40px", md: "48px" },
           fontWeight: 800,
           textAlign: "center",
         }}

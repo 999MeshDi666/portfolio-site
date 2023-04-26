@@ -72,7 +72,6 @@ const PortfolioCard = (props) => {
         component="img"
         src={img}
         sx={{
-     
           width: { xs: "86px", sm: "100px" },
           height: { xs: "86px", sm: "100px" },
         }}

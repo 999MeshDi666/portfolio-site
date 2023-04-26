@@ -25,7 +25,8 @@ const designList = [
         bgColor: "#4A554B",
         link: "https://www.figma.com/file/3ah103NStIWFvNd3D71iFE/Eco-Sandwiches?node-id=2%3A2&t=qyj0hQru8TovBMuM-1",
         img: sandwich
-    }
+    },
+   
 ]
 const projectList = [
     {
