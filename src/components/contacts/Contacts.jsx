@@ -57,7 +57,7 @@ const Contacts = () => {
           style={general}
           sx={{
             backgroundColor: "#fff",
-            width: { xs: "180px", sm: "368px" },
+            width: { xs: "180px", sm: "296px" },
             height: { xs: "30px", sm: "60px" },
             "&:hover": {
               backgroundColor: "#fff",
@@ -77,8 +77,8 @@ const Contacts = () => {
             style={general}
             sx={{
               backgroundColor: "#497EBC",
-              width: { xs: "85px", sm: "170px" },
-              height: { xs: "26px", sm: "52px" },
+              width: { xs: "85px", sm: "138px" },
+              height: { xs: "26px", sm: "46px" },
               "&:hover": {
                 backgroundColor: "#497EBC",
               },
@@ -91,8 +91,8 @@ const Contacts = () => {
             style={general}
             sx={{
               backgroundColor: "#4199FF",
-              width: { xs: "85px", sm: "170px" },
-              height: { xs: "26px", sm: "52px" },
+              width: { xs: "85px", sm: "138px" },
+              height: { xs: "26px", sm: "46px" },
               "&:hover": {
                 backgroundColor: "#4199FF",
               },

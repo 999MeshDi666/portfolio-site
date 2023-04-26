@@ -74,6 +74,7 @@ const PortfolioCard = (props) => {
         sx={{
           width: { xs: "86px", sm: "100px" },
           height: { xs: "86px", sm: "100px" },
+          marginLeft: "10px",
         }}
       />
     </Card>

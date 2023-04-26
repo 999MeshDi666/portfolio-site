@@ -11,6 +11,7 @@ import Contacts from "./components/contacts/Contacts";
 import NavigationModal from "./components/navbar/NavigationModal";
 import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
+import Footer from "./components/footer/Footer";
 
 const getDesignTokens = (mode) => ({
   palette: {
@@ -91,6 +92,7 @@ function App() {
           <About/>
           <Portfolio/>
         </Container>
+        <Footer/>
       </ThemeProvider>
     </div>
   );
