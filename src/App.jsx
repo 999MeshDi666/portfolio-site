@@ -3,6 +3,7 @@ import {
   createTheme,
   ThemeProvider,
   Container,
+  Box
 } from "@mui/material";
 import { useMemo, useState } from "react";
 import Navbar from "./components/navbar/Navbar";
@@ -12,6 +13,7 @@ import NavigationModal from "./components/navbar/NavigationModal";
 import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
+import Model from "./components/model/Model";
 
 const getDesignTokens = (mode) => ({
   palette: {
@@ -87,8 +89,11 @@ function App() {
         <CssBaseline />
         <Navbar/>
         <NavigationModal/>
+       
         <Container>
+         
           <Contacts/>
+          <Model/> 
           <About/>
           <Portfolio/>
         </Container>

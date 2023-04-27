@@ -5,11 +5,11 @@ import PortfolioTabs from "./PortfolioTabs";
 const Portfolio = () => {
   
   return (
-    <Box sx={{ py: "50px" }}>
+    <Box sx={{ py: "100px" }}>
       <Typography
         variant="h1"
         sx={{
-          fontSize: { xs: "20px", sm: "40px", md: "48px" },
+          fontSize: { xs: "20px", sm: "40px", md: "46px" },
           fontWeight: 800,
           textAlign: "center",
         }}

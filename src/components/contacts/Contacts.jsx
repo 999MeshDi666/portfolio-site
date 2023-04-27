@@ -15,14 +15,14 @@ const general = {
 
 const Contacts = () => {
   return (
-    <Box sx={{ textAlign: "center", paddingTop: "86px", paddingBottom: "50px" }}>
+    <Box sx={{ textAlign: "center", paddingTop: "86px", paddingBottom: "100px" }}>
       <Box
         component="img"
         alt="Image"
         src={madi}
         sx={{
-          width: { xs: "80px", sm: "160px" },
-          height: { xs: "80px", sm: "160px" },
+          width: { xs: "80px", sm: "160px", md: "120px" },
+          height: { xs: "80px", sm: "160px", md: "120px" },
           border: "2px solid",
           borderColor: "divider",
           borderRadius: "50%",
@@ -31,21 +31,21 @@ const Contacts = () => {
       <Box>
         <Typography
           variant="h1"
-          sx={{ fontSize: { xs: "18px", sm: "36px" }, fontWeight: 700 }}
+          sx={{ fontSize: { xs: "18px", sm: "36px", md: "24px" }, fontWeight: 700 }}
         >
           Yegeubekov Madi
         </Typography>
         <Typography
           variant="subtitle1"
-          sx={{ color: "text.secondary", fontSize: { xs: "10px", sm: "20px" } }}
+          sx={{ color: "text.secondary", fontSize: { xs: "10px", sm: "20px", md: "18px" } }}
         >
           @Madi0404
         </Typography>
         <Typography
           variant="body1"
           sx={{
-            fontSize: { xs: "14px", sm: "24px" },
-            marginTop: { xs: "8px", sm: "16px" },
+            fontSize: { xs: "14px", sm: "24px", md: "20px" },
+            marginTop: { xs: "8px", sm: "16px", md: "14px" },
           }}
         >
           Hi👋 , my name is Madi and I want to <br /> be a frontend developer✌.
@@ -57,8 +57,8 @@ const Contacts = () => {
           style={general}
           sx={{
             backgroundColor: "#fff",
-            width: { xs: "180px", sm: "296px" },
-            height: { xs: "30px", sm: "60px" },
+            width: { xs: "180px", sm: "296px", md: "260px" },
+            height: { xs: "30px", sm: "60px" , md: "45px"},
             "&:hover": {
               backgroundColor: "#fff",
             },
@@ -77,8 +77,8 @@ const Contacts = () => {
             style={general}
             sx={{
               backgroundColor: "#497EBC",
-              width: { xs: "85px", sm: "138px" },
-              height: { xs: "26px", sm: "46px" },
+              width: { xs: "85px", sm: "138px", md: "120px" },
+              height: { xs: "26px", sm: "46px", md: "36px" },
               "&:hover": {
                 backgroundColor: "#497EBC",
               },
@@ -91,8 +91,8 @@ const Contacts = () => {
             style={general}
             sx={{
               backgroundColor: "#4199FF",
-              width: { xs: "85px", sm: "138px" },
-              height: { xs: "26px", sm: "46px" },
+              width: { xs: "85px", sm: "138px", md: "120px" },
+              height: { xs: "26px", sm: "46px", md: "36px" },
               "&:hover": {
                 backgroundColor: "#4199FF",
               },

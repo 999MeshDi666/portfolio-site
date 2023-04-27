@@ -26,14 +26,14 @@ const skillList = [
 ];
 const About = () => {
   return (
-    <Box sx={{ py: "50px" }}>
-      <Box>
+    <Box sx={{ py: "100px" }}>
+      <Box sx={{px: {md: "120px"}}}>
         <Typography
           variant="h1"
           sx={{
-            fontSize: { xs: "20px", sm: "40px", md: "48px" },
+            fontSize: { xs: "20px", sm: "40px", md: "46px" },
             fontWeight: 800,
-            marginBottom: { xs: "20px", sm: "40px" },
+            marginBottom: { xs: "20px", sm: "30px"},
             textAlign: "center",
           }}
         >
@@ -42,8 +42,9 @@ const About = () => {
         <Typography
           variant="body1"
           sx={{ 
-                fontSize: { xs: "14px", sm: "20px", md: "22px" }, 
-                textAlign: "justify" 
+                fontSize: { xs: "14px", sm: "20px"}, 
+                textAlign: "justify",
+                lineHeight: {md: "35px"}
             }}
         >
           I like to develop and make various applications that can help not only
