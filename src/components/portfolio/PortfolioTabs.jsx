@@ -9,7 +9,7 @@ const TabTitles = (props) => {
       sx={{
         textTransform: "none",
         fontWeight: "bold",
-        fontSize: { xs: "16px", sm: "24px" },
+        fontSize: { xs: "16px", sm: "24px", md: "22px" },
       }}
    />
   );
@@ -36,11 +36,13 @@ const PortfolioTabs = () => {
             label="Design"
             id="portfolio-tab-0"
             aria-controls="portfolio-tabpanel-0"
+            
           />
           <TabTitles
             label="Projects"
             id="portfolio-tab-1"
             aria-controls="portfolio-tabpanel-1"
+          
           />
         </Tabs>
       </Box>

@@ -3,7 +3,7 @@ import Madi from "./Madi";
 
 const Model = () => {
   return (
-    <Box sx={{ pt: "50px" }}>
+    <Box>
       <Box sx={{textAlign: "center"}}>
         <Typography
           variant="h1"
@@ -24,7 +24,7 @@ const Model = () => {
          Touch or rotate this 3d object
         </Typography>
       </Box>
-      <Madi />
+      <Madi/>
     </Box>
   );
 };

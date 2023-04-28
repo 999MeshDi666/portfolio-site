@@ -26,7 +26,7 @@ const skillList = [
 ];
 const About = () => {
   return (
-    <Box sx={{ py: "100px" }}>
+    <Box sx={{pt: {sm: "50px"}}}>
       <Box sx={{px: {md: "120px"}}}>
         <Typography
           variant="h1"
@@ -42,7 +42,7 @@ const About = () => {
         <Typography
           variant="body1"
           sx={{ 
-                fontSize: { xs: "14px", sm: "20px"}, 
+                fontSize: { xs: "14px", sm: "20px", md: "18px"}, 
                 textAlign: "justify",
                 lineHeight: {md: "35px"}
             }}
@@ -65,7 +65,7 @@ const About = () => {
         justifyContent="center"
         flexWrap="wrap"
         sx={{
-          marginTop: { xs: "40px", sm: "80px" },
+          marginTop: { xs: "40px", sm: "65px" },
           mx: "auto",
           textAlign: "center",
           width: { xs: "180px", sm: "300px" },
@@ -76,7 +76,7 @@ const About = () => {
             component="span"
             sx={{
               mx: { xs: "6px", sm: "10px" },
-              marginBottom: { xs: "6px", sm: "10px" },
+              marginBottom: { xs: "6px", sm: "15px" },
             }}
             key={index}
           >

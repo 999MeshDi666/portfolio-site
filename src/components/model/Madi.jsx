@@ -3,14 +3,17 @@ import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
 import { Stand } from "./Stand";
 import { Glassdome } from "./Glassdome";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 const Madi = () => {
+  const theme = useTheme();
+  const lessThanSmall = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Canvas
       orthographic
       style={{
         width: "100%",
-        height: "80vh",
+        height: "70vh",
       }}
       camera={{ position: [0, 0, 15], zoom: 30 }}
     >
@@ -25,12 +28,12 @@ const Madi = () => {
             enableZoom={false}/>
         <PerspectiveCamera />
         <Glassdome
-            scale={[0.3, 0.3, 0.3]} 
-            position={[-5.4, -6, -7.9]} 
+            scale={lessThanSmall ? 0.20 : 0.28} 
+            position={lessThanSmall ? [-3.85, -3.52, -7.9] : [-5.2, -6, -7.9]} 
         />
         <Stand
-            position={[-5.6, -6, -10]}
-            scale={[0.3, 0.3, 0.3]}
+            position={lessThanSmall ? [-4, -4, -10] : [-5.4, -6, -10]}
+            scale={lessThanSmall ? 0.20 : 0.28}
             rotation={[0, 0, 0]}
         />
       </Suspense>

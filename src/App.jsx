@@ -91,7 +91,6 @@ function App() {
         <NavigationModal/>
        
         <Container>
-         
           <Contacts/>
           <Model/> 
           <About/>
