@@ -1,11 +1,13 @@
 import { Typography, Box } from "@mui/material";
-import { useSelector } from "react-redux";
-const pages = ["About", "Portfolio", "Contacts"];
+import { useDispatch, useSelector } from "react-redux";
+import { toggleNavigation } from "../../store/slice/navigationSlice";
+const pages = ["about", "portfolio", "contacts"];
 
 
 const NavigationModal = () => {
   const isOpened = useSelector((state)=> state.navigate.isOpened);
-
+  const dispatch = useDispatch();
+  
   return (
     <Box
       sx={{
@@ -27,12 +29,22 @@ const NavigationModal = () => {
           textAlign: "center",
         }}
       >
-        {pages.map((elem) => (
+        {pages.map((page) => (
           <Typography
-            sx={{ fontSize: {xs:"25px", sm: "50px" }, marginBottom: "50px" }}
-            key={elem}
+            component="a"
+            sx={{ 
+              fontSize: {xs:"25px", sm: "50px" },
+              display: "block", 
+              marginBottom: "50px",
+              color: "text.primary",
+              textDecoration: "none", 
+              textTransform: "uppercase"
+            }}
+            key={page}
+            href={"#"+page}
+            onClick={() => dispatch(toggleNavigation())}
           >
-            {elem}
+            {page}
           </Typography>
         ))}
       </Box>

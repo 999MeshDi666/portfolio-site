@@ -15,7 +15,7 @@ const general = {
 
 const Contacts = () => {
   return (
-    <Box sx={{ textAlign: "center", py:"100px"}}>
+    <Box sx={{ textAlign: "center", py:"100px"}} id="contacts">
       <Box
         component="img"
         alt="Image"

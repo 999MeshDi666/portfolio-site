@@ -26,7 +26,7 @@ const skillList = [
 ];
 const About = () => {
   return (
-    <Box sx={{pt: "100px"}}>
+    <Box sx={{pt: "100px"}} id="about">
       <Box sx={{px: {md: "120px"}}}>
         <Typography
           variant="h1"

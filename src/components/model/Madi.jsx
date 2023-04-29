@@ -13,7 +13,7 @@ const Madi = () => {
       orthographic
       style={{
         width: "100%",
-        height: lessThanSmall ? "55vh" : "70vh",
+        height: lessThanSmall ? "50vh" : "70vh",
       }}
       camera={{ position: [0, 0, 15], zoom: 30 }}
     >
@@ -29,10 +29,10 @@ const Madi = () => {
         <PerspectiveCamera />
         <Glassdome
             scale={lessThanSmall ? 0.19 : 0.28} 
-            position={lessThanSmall ? [-3.52, -4.55, -8.5] : [-5.2, -6, -7.9]} 
+            position={lessThanSmall ? [-3.52, -4.10, -8.5] : [-5.2, -6, -7.9]} 
         />
         <Stand
-            position={lessThanSmall ? [-3.65, -5, -10] : [-5.4, -6, -10]}
+            position={lessThanSmall ? [-3.65, -4.10, -10] : [-5.4, -6, -10]}
             scale={lessThanSmall ? 0.19 : 0.28}
             rotation={[0, 0, 0]}
         />

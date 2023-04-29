@@ -24,8 +24,6 @@ const Navbar = () => {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
             sx={{
               display: "flex",
               fontWeight: 800,

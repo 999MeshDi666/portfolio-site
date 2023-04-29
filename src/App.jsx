@@ -16,6 +16,7 @@ import Footer from "./components/footer/Footer";
 import Model from "./components/model/Model";
 
 const getDesignTokens = (mode) => ({
+
   palette: {
     mode,
     ...(mode === "dark"

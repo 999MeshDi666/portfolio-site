@@ -9,7 +9,7 @@ import { BurgerBox } from "../icons/Icons";
 
 
 
-const pages = ["About", "Portfolio", "Contacts"];
+const pages = ["about", "portfolio", "contacts"];
 
 const Navigation = () => {
   const dispatch = useDispatch();
@@ -52,6 +52,7 @@ const Navigation = () => {
       <Box sx={{ display: { xs: "none", md: "flex" } }}>
         {pages.map((page) => (
           <Button
+            href={"#"+page}
             key={page}
             sx={{ color: "inherit", display: "block", mx: "30px" }}
           >

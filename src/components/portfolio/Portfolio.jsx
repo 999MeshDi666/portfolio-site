@@ -5,7 +5,7 @@ import PortfolioTabs from "./PortfolioTabs";
 const Portfolio = () => {
   
   return (
-    <Box sx={{ py: "100px" }}>
+    <Box sx={{ py: "100px" }} id="portfolio">
       <Typography
         variant="h1"
         sx={{
