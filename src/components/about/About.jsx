@@ -33,7 +33,7 @@ const About = () => {
           sx={{
             fontSize: { xs: "20px", sm: "40px", md: "46px" },
             fontWeight: 800,
-            marginBottom: { xs: "20px", sm: "30px"},
+            marginBottom: { xs: "20px", sm: "40px"},
             textAlign: "center",
           }}
         >
@@ -65,7 +65,7 @@ const About = () => {
         justifyContent="center"
         flexWrap="wrap"
         sx={{
-          marginTop: { xs: "40px", sm: "65px" },
+          marginTop: { xs: "40px", sm: "60px" },
           mx: "auto",
           textAlign: "center",
           width: { xs: "180px", sm: "300px" },

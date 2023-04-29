@@ -29,7 +29,7 @@ const Madi = () => {
         <PerspectiveCamera />
         <Glassdome
             scale={lessThanSmall ? 0.20 : 0.28} 
-            position={lessThanSmall ? [-3.85, -3.52, -7.9] : [-5.2, -6, -7.9]} 
+            position={lessThanSmall ? [-3.85, -3.52, -8.2] : [-5.2, -6, -7.9]} 
         />
         <Stand
             position={lessThanSmall ? [-4, -4, -10] : [-5.4, -6, -10]}
