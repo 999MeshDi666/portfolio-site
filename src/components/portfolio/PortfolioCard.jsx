@@ -20,7 +20,7 @@ const PortfolioCard = (props) => {
         borderRadius: "10px",
         padding: "20px",
         marginBottom: "20px",
-        width: {xs: "330px", sm: "360px"}
+        width: {xs: "330px", md: "360px"}
       }}
     >
       <CardContent sx={{ padding: 0 }}>

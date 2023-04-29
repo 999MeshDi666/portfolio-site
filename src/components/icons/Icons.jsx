@@ -41,8 +41,8 @@ export const Telegram = () => {
     <SvgIcon
       viewBox="0 0 24 20"
       sx={{
-        width: { xs: "12px", sm: "20px" },
-        height: { xs: "10px", sm: "20px" },
+        width: { xs: "14px", sm: "20px" },
+        height: { xs: "12px", sm: "20px" },
       }}
     >
       <path
@@ -58,8 +58,8 @@ export const LinkedIn = () => {
     <SvgIcon
       viewBox="0 0 20 20"
       sx={{
-        width: { xs: "10px", sm: "20px" },
-        height: { xs: "10px", sm: "20px" },
+        width: { xs: "12px", sm: "20px" },
+        height: { xs: "12px", sm: "20px" },
       }}
     >
       <path

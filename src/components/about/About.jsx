@@ -26,12 +26,12 @@ const skillList = [
 ];
 const About = () => {
   return (
-    <Box sx={{pt: {sm: "50px"}}}>
+    <Box sx={{pt: "100px"}}>
       <Box sx={{px: {md: "120px"}}}>
         <Typography
           variant="h1"
           sx={{
-            fontSize: { xs: "20px", sm: "40px", md: "46px" },
+            fontSize: { xs: "24px", sm: "40px", md: "46px" },
             fontWeight: 800,
             marginBottom: { xs: "20px", sm: "40px"},
             textAlign: "center",

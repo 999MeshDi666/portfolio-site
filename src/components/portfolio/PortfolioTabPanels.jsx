@@ -112,7 +112,7 @@ const TabPanel = (props) => {
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: { xs: "space-evenly", md: "space-between" },
+            justifyContent: { xs: "space-evenly", lg: "space-between" },
           }}
         >
           {children}
