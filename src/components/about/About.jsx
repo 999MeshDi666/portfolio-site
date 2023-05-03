@@ -1,29 +1,6 @@
-import { Typography, Box, Stack } from "@mui/material";
-import {
-  JavaScript,
-  CSharp,
-  Python,
-  Firebase,
-  MySql,
-  Postgres,
-  Html,
-  CSS,
-  Figma,
-  Photoshop,
-} from "../icons/Icons";
+import { Typography, Box } from "@mui/material";
+import Skills from "./Skills";
 
-const skillList = [
-  <JavaScript />,
-  <CSharp />,
-  <Python />,
-  <Firebase />,
-  <MySql />,
-  <Postgres />,
-  <Html />,
-  <CSS />,
-  <Figma />,
-  <Photoshop />,
-];
 const About = () => {
   return (
     <Box sx={{pt: "100px"}} id="about">
@@ -60,30 +37,7 @@ const About = () => {
           are required in this area.
         </Typography>
       </Box>
-      <Stack
-        direction="row"
-        justifyContent="center"
-        flexWrap="wrap"
-        sx={{
-          marginTop: { xs: "40px", sm: "60px" },
-          mx: "auto",
-          textAlign: "center",
-          width: { xs: "180px", sm: "300px" },
-        }}
-      >
-        {skillList.map((skill, index) => (
-          <Box
-            component="span"
-            sx={{
-              mx: { xs: "6px", sm: "10px" },
-              marginBottom: { xs: "6px", sm: "15px" },
-            }}
-            key={index}
-          >
-            {skill}
-          </Box>
-        ))}
-      </Stack>
+      <Skills/>
     </Box>
   );
 };

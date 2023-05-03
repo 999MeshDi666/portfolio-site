@@ -1,5 +1,5 @@
-import {Typography,Box} from "@mui/material";
-import PortfolioTabs from "./PortfolioTabs";
+import {Typography, Box} from "@mui/material";
+import PortfolioTabs from "./portfolio-tab/PortfolioTabs";
 
 
 const Portfolio = () => {

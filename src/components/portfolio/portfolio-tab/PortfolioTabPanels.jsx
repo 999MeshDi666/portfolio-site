@@ -1,13 +1,13 @@
 import { Box } from "@mui/material";
-import PortfolioCard from "./PortfolioCard";
-import spaceship from "../../assets/images/spaceship.svg";
-import yawning from "../../assets/images/yawning.svg";
-import sandwich from "../../assets/images/sandwich.svg";
-import retro from "../../assets/images/retro-game.svg";
-import mythology from "../../assets/images/mythology.svg";
-import keyboard from "../../assets/images/keyboard-key.svg";
-import books from "../../assets/images/books.svg";
-import puzzle from "../../assets/images/puzzle.svg";
+import PortfolioCard from "../PortfolioCard";
+import spaceship from "../../../assets/images/spaceship.svg";
+import yawning from "../../../assets/images/yawning.svg";
+import sandwich from "../../../assets/images/sandwich.svg";
+import retro from "../../../assets/images/retro-game.svg";
+import mythology from "../../../assets/images/mythology.svg";
+import keyboard from "../../../assets/images/keyboard-key.svg";
+import books from "../../../assets/images/books.svg";
+import puzzle from "../../../assets/images/puzzle.svg";
 const designList = [
   {
     title: "Flexbox cosmo\nadventure",

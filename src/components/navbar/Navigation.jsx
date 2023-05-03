@@ -11,6 +11,7 @@ import { BurgerBox } from "../icons/Icons";
 
 const pages = ["about", "portfolio", "contacts"];
 
+
 const Navigation = () => {
   const dispatch = useDispatch();
   const isOpened = useSelector((state)=> state.navigate.isOpened);
@@ -19,8 +20,7 @@ const Navigation = () => {
     <Box
       sx={{ display: "flex", justifyContent: "space-between", width: "52%" }}
     >
-      <Box>
-        <Button
+      <Button
           onClick={() => dispatch(asyncToggleTheme())}
           color="inherit"
           sx={{
@@ -47,8 +47,7 @@ const Navigation = () => {
               }}
             />
           )}
-        </Button>
-      </Box>
+      </Button>
       <Box sx={{ display: { xs: "none", md: "flex" } }}>
         {pages.map((page) => (
           <Button
@@ -60,11 +59,11 @@ const Navigation = () => {
           </Button>
         ))}
       </Box>
-      <Box sx={{ display: { xs: "flex", md: "none" } }}>
-        <Button
+      <Button
           color="inherit"
           onClick={()=> dispatch(toggleNavigation())}
           sx={{
+            display: { md: "none" },
             backgroundColor: "secondary.dark",
             border: "1px solid #606060",
             borderRadius: "5px",
@@ -74,8 +73,7 @@ const Navigation = () => {
           }}
         >
           <BurgerBox isOpened={isOpened}/>
-        </Button>
-      </Box>
+      </Button>
      
     </Box>
   );
