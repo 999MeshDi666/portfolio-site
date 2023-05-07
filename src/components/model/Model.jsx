@@ -4,7 +4,7 @@ import Madi from "./Madi";
 const Model = () => {
   return (
     <Box>
-      <Box sx={{textAlign: "center",}}>
+      <Box sx={{textAlign: "center"}}>
         <Typography
           variant="h1"
           sx={{

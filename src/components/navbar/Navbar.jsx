@@ -7,7 +7,7 @@ const Navbar = () => {
       position="sticky"
       sx={{
         boxShadow: "none", 
-        borderBottom: "0.5px solid",
+        borderBottom: "1px solid",
         borderColor: "divider",
         backgroundImage: "none",
         backgroundColor: "primary.main"

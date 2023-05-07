@@ -3,10 +3,11 @@ import { Typography, Box, Container, AppBar } from "@mui/material";
 const Footer = () => {
   return (
     <AppBar
+      component="footer"
       position="relative"
       sx={{
         boxShadow: "none",
-        borderTop: "0.5px solid",
+        borderTop: "1px solid",
         borderColor: "divider",
         backgroundImage: "none",
         backgroundColor: "primary.main",
