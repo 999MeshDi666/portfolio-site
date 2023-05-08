@@ -13,7 +13,7 @@ const Contacts = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        height: "100vh", 
+        height: "85vh", 
       }} 
       id="contacts">
       <Box
