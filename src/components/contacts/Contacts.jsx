@@ -6,7 +6,16 @@ import ContactButtons from "./ContactButtons";
 
 const Contacts = () => {
   return (
-    <Box sx={{ textAlign: "center", py:"100px"}} id="contacts">
+    <Box 
+      sx={{ 
+        textAlign: "center",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        height: "100vh", 
+      }} 
+      id="contacts">
       <Box
         component="img"
         alt="Image"

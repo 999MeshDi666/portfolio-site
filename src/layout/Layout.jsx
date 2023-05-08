@@ -25,6 +25,7 @@ const Layout = () => {
         <AnimatedScroll>
           <Portfolio />
         </AnimatedScroll>
+
       </Container>
       <Footer />
     </>

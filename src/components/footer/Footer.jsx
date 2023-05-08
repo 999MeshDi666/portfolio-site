@@ -6,6 +6,7 @@ const Footer = () => {
       component="footer"
       position="relative"
       sx={{
+        
         boxShadow: "none",
         borderTop: "1px solid",
         borderColor: "divider",

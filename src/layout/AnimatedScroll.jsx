@@ -1,7 +1,8 @@
-
 import { useInView, animated } from '@react-spring/web'
-
+import { Box } from "@mui/material";
 const AnimatedScroll = ({children}) =>{
+    
+    const AnimatedBox = animated(Box)
     const [ref, springs] = useInView(
         () => ({
           from: {
@@ -19,9 +20,9 @@ const AnimatedScroll = ({children}) =>{
     )
     
     return( 
-        <animated.section ref={ref} style={springs}>
-            {children}
-        </animated.section>
+        <AnimatedBox ref={ref} style={springs}>
+          {children}
+        </AnimatedBox>
     )
 }
 export default AnimatedScroll;
